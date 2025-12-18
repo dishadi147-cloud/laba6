@@ -18,6 +18,14 @@ Complex subtract(Complex a, Complex b) {
     return create_complex(a.real - b.real, a.imag - b.imag);
 }
 
+Complex add(Complex a, Complex b) {
+    return create_complex(a.real + b.real, a.imag + b.imag);
+}
+
+Complex subtract(Complex a, Complex b) {
+    return create_complex(a.real - b.real, a.imag - b.imag);
+}
+
 Complex multiply(Complex a, Complex b) {
     Complex result;
     result.real = a.real * b.real - a.imag * b.imag;
