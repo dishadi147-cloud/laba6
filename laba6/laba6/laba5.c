@@ -8,30 +8,7 @@ typedef struct {
     double imag;
 } Complex;
 
-// Функции для работы с комплексными числами
-Complex create_complex(double real, double imag) {
-    Complex c;
-    c.real = real;
-    c.imag = imag;
-    return c;
-}
 
-// Функции для работы с комплексными числами
-Complex create_complex(double real, double imag) {
-    Complex c;
-    c.real = real;
-    c.imag = imag;
-    return c;
-}
-
-void print_complex(Complex c) {
-    if (c.imag >= 0) {
-        printf("%.2f + %.2fi", c.real, c.imag);
-    }
-    else {
-        printf("%.2f - %.2fi", c.real, -c.imag);
-    }
-}
 
 Complex add(Complex a, Complex b) {
     return create_complex(a.real + b.real, a.imag + b.imag);
